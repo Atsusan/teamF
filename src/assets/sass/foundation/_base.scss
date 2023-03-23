@@ -1,0 +1,26 @@
+@use "../global" as global;
+
+body {
+  color: global.$text-color;
+  font-family: global.$ff-base;
+  font-size: global.$fz-base;
+  font-weight: global.$fw-base;
+  line-height: global.$lh-base;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.inner {
+  max-width: calc(1110px + 20px + 20px);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
