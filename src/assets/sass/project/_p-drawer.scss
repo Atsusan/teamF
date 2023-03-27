@@ -3,7 +3,7 @@
 /*========= ナビゲーションのためのCSS ===============*/
 
 /*アクティブになったエリア*/
-.p-drawer__nav.panelactive{
+.p-drawer__nav.panelactive {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position: fixed;
     z-index: 110;
@@ -13,7 +13,7 @@
 }
 
 /*丸の拡大*/
-.p-drawer__circle-bg{
+.p-drawer__circle-bg {
     position: fixed;
 	z-index: 30;
     /*丸の形*/
@@ -28,7 +28,7 @@
     transition: all .6s;/*0.6秒かけてアニメーション*/
 }
 
-.p-drawer__circle-bg.circleactive{
+.p-drawer__circle-bg.circleactive {
 	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
 }
 
@@ -44,7 +44,7 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.p-drawer__nav.panelactive .p-drawer__list{
+.p-drawer__nav.panelactive .p-drawer__list {
      display: block; /*クラスが付与されたら出現*/
 }
 
@@ -65,14 +65,14 @@
 }
 
 /* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
-.p-drawer__nav.panelactive ul li{
+.p-drawer__nav.panelactive ul li {
     animation-name: gnaviAnime;
     animation-duration: 1s;
     animation-delay: .2s;/*0.2 秒遅らせて出現*/
     animation-fill-mode: forwards;
     opacity: 0;
 }
-@keyframes gnaviAnime{
+@keyframes gnaviAnime {
     0% {
        opacity: 0;
     }
@@ -83,12 +83,12 @@
 
 
 /*リストのレイアウト設定*/
-.p-drawer__nav li{
+.p-drawer__nav li {
 	text-align: left;
 	list-style: none;
 }
 
-.p-drawer__nav li a{
+.p-drawer__nav li a {
 	color: #fff;
 	text-decoration: none;
 	padding: 15px;
