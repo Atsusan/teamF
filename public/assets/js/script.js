@@ -17,3 +17,51 @@ jQuery("#js-drawer__list").click(function () {//ナビゲーションのリン�
     jQuery("#js-drawer__nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
     jQuery(".p-drawer__circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
 });
+
+
+// Swiper 実装
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+});
+
+// テキストアニメーション監視
+document.addEventListener('DOMContentLoaded', function () {
+
+  const els = document.querySelectorAll('.animate-title');
+  const cb = function (entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const ta = new TextAnimation(entry.target);
+              ta.animate();
+              observer.unobserve(entry.target);
+          } else {
+          }
+      });
+  };
+  const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0
+  };
+  const io = new IntersectionObserver(cb, options);
+  els.forEach(el => io.observe(el));
+});

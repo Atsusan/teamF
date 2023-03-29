@@ -108,7 +108,7 @@ a {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 10;
 }
 
 .l-bg-wrapper {
@@ -301,7 +301,19 @@ a {
 	height: 54.44444vw;
 	max-height: 784px;
 	overflow: hidden;
+	position: relative;
 	width: 100%;
+}
+
+.p-mv__bg::before {
+	background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.2) 3px);
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 .p-mv__bg > img {
@@ -330,6 +342,11 @@ a {
 	font-size: 24px;
 	line-height: 38px;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.p-mv__contact {
+	position: relative;
+	z-index: 2;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
@@ -537,6 +554,11 @@ a {
 	display: none;
 }
 
+.swiper {
+	height: 300px;
+	width: 600px;
+}
+
 @media screen and (min-width: 1100px) {
 
 .u-hidden-pc {
@@ -549,7 +571,7 @@ a {
 
 }
 
-@media screen and (max-width: 1166px) {
+@media screen and (max-width: 1177px) {
 
 .p-header__item {
 	font-size: 16px;
