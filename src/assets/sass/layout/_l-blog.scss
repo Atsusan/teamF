@@ -1,0 +1,11 @@
+@use '../global' as global;
+
+.l-blog {
+    padding-top: 80px;
+    margin-bottom: 80px;
+
+        @include global.mq(sp) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+}

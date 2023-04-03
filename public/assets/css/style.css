@@ -97,7 +97,15 @@ a {
 .l-inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1140px;
+	max-width: 1040px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.l-inner--swiper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1104px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -147,6 +155,11 @@ a {
 
 .l-contact__title {
 	margin-bottom: 60px;
+}
+
+.l-blog {
+	margin-bottom: 80px;
+	padding-top: 80px;
 }
 
 .c-btn {
@@ -413,6 +426,59 @@ a {
 .c-read::after {
 	right: 0;
 	transform: rotate(25deg) translate(5px, -2px);
+}
+
+/*== 下線が伸びて背景に変わる　*/
+
+.c-btn-view-more { /*ボタンの形状*/
+	color: #2F2E2E;
+	display: inline-block;
+	outline: none;
+	padding: 5px; /*線の基点とするためrelativeを指定*/
+	position: relative;
+	text-decoration: none; /*テキストの設定*/ /*線の設定*/ /*線が伸びて背景に*/
+}
+
+.c-btn-view-more > span { /*テキストを前面に出すためz-indexの値を高く設定*/
+	position: relative;
+	z-index: 2;
+}
+
+.c-btn-view-more:hover > span {
+	color: #fff;
+}
+
+.c-btn-view-more::after { /*線の形状*/
+	background: #2F2E2E;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	left: 0; /*絶対配置で線の位置を決める*/
+	position: absolute; /*アニメーションの指定*/
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	z-index: 1;
+}
+
+.c-btn-view-more:hover::after {
+	background-color: #3A65A9;
+	height: 100%;
+}
+
+.c-section__title {
+	color: #2F2E2E;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 56px;
+	font-weight: 400;
+	line-height: 80px;
+}
+
+.c-section__title__sub {
+	color: #2F2E2E;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
 }
 
 .p-header {
@@ -823,6 +889,81 @@ a {
 	line-height: 24px;
 }
 
+.p-card {
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	overflow: hidden;
+	transition: opacity 0.3s;
+	width: 280px;
+}
+
+.p-card__head {
+	flex-shrink: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.p-card__head::before {
+	content: "";
+	display: block;
+	padding-top: 62.5%;
+}
+
+.p-card__head > img {
+	-o-object-fit: cover;
+	height: 100%;
+	left: 0;
+	max-width: none;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	transition: transform 0.3s;
+	width: 100%;
+}
+
+.p-card:hover {
+	opacity: 0.8;
+}
+
+.p-card:hover .p-card__head > img {
+	transform: scale(1.1);
+}
+
+.p-card__body {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 15px 25px 30px;
+}
+
+.p-card__title {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 38px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.p-card__description {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	overflow: hidden;
+}
+
 .u-separate {
 	margin-bottom: 24px;
 	margin-top: 24px;
@@ -841,8 +982,16 @@ a {
 }
 
 .swiper {
-	height: 300px;
-	width: 600px;
+	height: 100%;
+	padding: 3px;
+	width: 100%;
+}
+
+.swiper-slide {
+	align-items: center;
+	display: flex;
+	margin-left: 40px;
+	max-width: 280px;
 }
 
 @media screen and (min-width: 1100px) {
@@ -907,9 +1056,24 @@ a {
 	display: block;
 }
 
+.swiper-slide {
+	justify-content: center;
+	margin-left: 0;
+}
+
 }
 
 @media screen and (max-width: 767px) {
+
+.l-inner {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.l-inner--swiper {
+	padding-left: 40px;
+	padding-right: 40px;
+}
 
 .l-header {
 	padding: 14px 20px;
@@ -945,6 +1109,11 @@ a {
 	margin-bottom: 30px;
 }
 
+.l-blog {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
 .c-btn {
 	font-style: 14px;
 	line-height: 22px;
@@ -967,6 +1136,16 @@ a {
 .c-read {
 	font-size: 14px;
 	line-height: 22px;
+}
+
+.c-section__title {
+	font-size: 32px;
+	line-height: 52px;
+}
+
+.c-section__title__sub {
+	font-size: 12px;
+	line-height: 12px;
 }
 
 .p-header__logo {
@@ -1066,12 +1245,30 @@ a {
 	padding: 8px 57px;
 }
 
+.p-card {
+	min-height: 150px;
+}
+
+.p-card__title {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.p-card__description {
+	font-size: 14px;
+	line-height: 22px;
+}
+
 .u-hidden-sp {
 	display: none;
 }
 
 .u-active-sp {
 	display: block;
+}
+
+.swiper-slide {
+	max-width: 100%;
 }
 
 }
