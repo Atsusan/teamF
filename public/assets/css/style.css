@@ -162,6 +162,38 @@ a {
 	padding-top: 80px;
 }
 
+.l-news {
+	margin: 80px auto;
+	max-width: 100%;
+	width: 1440px;
+}
+
+.l-news__title {
+	height: auto;
+	margin-left: 220px;
+	max-width: 100%;
+	width: 1440px;
+}
+
+.l-products {
+	background: #EFF0F5;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+
+.l-products__inner {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1440px;
+}
+
+.l-products__title {
+	height: auto;
+	margin-left: 220px;
+	max-width: 100%;
+	width: 1440px;
+}
+
 .c-btn {
 	background-color: #285DB1;
 	border-radius: 50px;
@@ -479,6 +511,22 @@ a {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 32px;
+}
+
+.c-viewMore {
+	border-bottom: 1px solid #333;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.01;
+	line-height: 2;
+	margin: 0 auto;
+	padding-bottom: 0px;
+	width: 112px;
+}
+
+.c-viewMore.__right {
+	margin-left: auto;
+	margin-right: 0;
 }
 
 .p-header {
@@ -964,6 +1012,110 @@ a {
 	overflow: hidden;
 }
 
+.p-news__index {
+	line-height: 2;
+	margin-left: 594px;
+	margin-right: 220px;
+	margin-top: 23.08px;
+	max-width: 100%;
+	width: 626px;
+}
+
+.p-news__item {
+	align-items: center;
+	border-bottom: 1px solid #CCCCCC;
+	display: flex;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	height: auto;
+	margin-top: 23.08px;
+	max-width: 100%;
+	padding-bottom: 25.92px;
+	width: inherit;
+}
+
+.p-news__item:first-child {
+	margin-top: 0;
+}
+
+.p-news__index-date {
+	font-weight: 400;
+}
+
+.p-news__index-title {
+	margin-left: 70px;
+}
+
+.p-news__index-footer {
+	margin-top: 50px;
+	text-align: right;
+}
+
+.p-products__index {
+	margin-left: 220px;
+	margin-top: 50px;
+}
+
+.p-products__items {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	max-width: 100%;
+	width: 1100px;
+}
+
+.p-products__item {
+	background: #fff;
+	border: 1px solid #EFF0F5;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	height: 280px;
+	margin-right: 40px;
+	max-width: 100%;
+	width: 480px;
+}
+
+.p-products__item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.p-products__item:nth-child(n+3) {
+	margin-top: 40px;
+}
+
+.p-products__head {
+	margin-top: 40px;
+}
+
+.p-products__title {
+	font-size: 24px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.p-products__body {
+	border-top: 1px dashed #333333;
+	margin: 20px 100px 34px;
+	padding-top: 19px;
+	text-align: center;
+	width: 265px;
+}
+
+.p-products__text {
+	-moz-text-align-last: left;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-weight: 400;
+	height: 128px;
+	line-height: 2;
+	text-align-last: left;
+	width: 100%;
+}
+
+.p-products__index-footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
 .u-separate {
 	margin-bottom: 24px;
 	margin-top: 24px;
@@ -1114,6 +1266,27 @@ a {
 	padding-top: 50px;
 }
 
+.l-news {
+	margin: 50px auto;
+	padding: 0 40px;
+}
+
+.l-news__title {
+	margin-left: 0px;
+}
+
+.l-products {
+	padding: 50px 0;
+}
+
+.l-products__inner {
+	padding: 0 40px;
+}
+
+.l-products__title {
+	margin-left: 0px;
+}
+
 .c-btn {
 	font-style: 14px;
 	line-height: 22px;
@@ -1146,6 +1319,11 @@ a {
 .c-section__title__sub {
 	font-size: 12px;
 	line-height: 12px;
+}
+
+.c-viewMore.__right {
+	font-size: 16px;
+	width: 83px;
 }
 
 .p-header__logo {
@@ -1257,6 +1435,71 @@ a {
 .p-card__description {
 	font-size: 14px;
 	line-height: 22px;
+}
+
+.p-news__index {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 14px;
+}
+
+.p-news__item {
+	font-size: 14px;
+	margin-top: 14px;
+	padding-bottom: 14px;
+	width: 295px;
+}
+
+.p-news__index-title {
+	margin-left: 40px;
+}
+
+.p-news__index-footer {
+	margin-top: 30px;
+}
+
+.p-products__index {
+	margin-left: 0;
+	margin-top: 36px;
+}
+
+.p-products__items {
+	display: block;
+}
+
+.p-products__item {
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	height: 180px;
+	margin-right: 0;
+	width: 295px;
+}
+
+.p-products__item:nth-child(n+3) {
+	margin-top: 0;
+}
+
+.p-products__item:nth-child(n+2) {
+	margin-top: 30px;
+}
+
+.p-products__head {
+	margin-top: 20px;
+}
+
+.p-products__title {
+	font-size: 16px;
+}
+
+.p-products__body {
+	margin: 10px 15px 20px;
+	padding-top: 9px;
+}
+
+.p-products__text {
+	font-size: 14px;
+	height: 88px;
+	line-height: 1.57;
+	padding: 0 19px;
 }
 
 .u-hidden-sp {
