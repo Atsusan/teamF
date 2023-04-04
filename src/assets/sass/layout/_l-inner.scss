@@ -19,6 +19,7 @@
     padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
+    position: relative; // prev next を外に出すための処置
 
       @include global.mq(sp) {
         padding-left: 40px;

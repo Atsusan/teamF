@@ -2,10 +2,29 @@
 
 .l-blog {
     padding-top: 80px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 
         @include global.mq(sp) {
             padding-top: 50px;
             padding-bottom: 50px;
         }
+
+
+    &__swiper {
+        margin-top: 50px;
+
+            @include global.mq(sp) {
+                margin-top: 30px;
+            }
+    }
+
+    &__btnArea {
+        margin-top: 75px;
+        text-align: center;
+
+            @include global.mq(sp) {
+                margin-top: 40px;
+                text-align: right;
+            }
+    }
 }

@@ -26,10 +26,11 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 20,
     grabCursor: true,
-    // effect: 'coverflow',
-    centeredSlides: true,
     slidesPerView: 1,
     speed: 600,
+    direction: 'horizontal',
+    // effect: 'coverflow',
+    loopAdditionalSlides: 1,
     breakpoints: {
         1100: {
             slidesPerView: 3,
@@ -37,16 +38,10 @@ const swiper = new Swiper('.swiper', {
         },
         670: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 20,
         },
     },
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
