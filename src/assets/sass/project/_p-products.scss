@@ -54,7 +54,6 @@
     &:nth-child(n + 2) {
       margin-top: 30px;
     }
-
   }
 }
 
@@ -110,4 +109,14 @@
   text-align: center;
 }
 
+.p-products__view-more {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: .01;
 
+  @include global.mq(sp) {
+    font-size: 16px;
+  }
+}
