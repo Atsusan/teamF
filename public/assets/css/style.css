@@ -204,6 +204,15 @@ a {
 	width: 1440px;
 }
 
+.l-about__inner {
+	padding: 80px 0;
+	padding-left: 15.2672%;
+}
+
+.l-about__btnArea {
+	padding-top: 50px;
+}
+
 .c-btn {
 	background-color: #285DB1;
 	border-radius: 50px;
@@ -507,6 +516,43 @@ a {
 	height: 100%;
 }
 
+/*== 下線が伸びて背景に変わる-色反転バージョン-白線白背景色　*/
+
+.c-btn-view-more--rev { /*ボタンの形状*/
+	color: #2F2E2E;
+	display: inline-block;
+	outline: none;
+	padding: 5px; /*線の基点とするためrelativeを指定*/
+	position: relative;
+	text-decoration: none; /*テキストの設定*/ /*線の設定*/ /*線が伸びて背景に*/
+}
+
+.c-btn-view-more--rev > span { /*テキストを前面に出すためz-indexの値を高く設定*/
+	position: relative;
+	z-index: 2;
+}
+
+.c-btn-view-more--rev:hover > span {
+	color: #2F2E2E;
+}
+
+.c-btn-view-more--rev::after { /*線の形状*/
+	background: #fff;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	left: 0; /*絶対配置で線の位置を決める*/
+	position: absolute; /*アニメーションの指定*/
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	z-index: 1;
+}
+
+.c-btn-view-more--rev:hover::after {
+	background-color: #fff;
+	height: 100%;
+}
+
 .c-section__title {
 	color: #2F2E2E;
 	font-family: "Helvetica Neue", "Roboto", sans-serif;
@@ -517,6 +563,24 @@ a {
 
 .c-section__title__sub {
 	color: #2F2E2E;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+/*== タイトルの文字色が#fffバージョン　*/
+
+.c-section__title--rev {
+	color: #fff;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 56px;
+	font-weight: 400;
+	line-height: 80px;
+}
+
+.c-section__title--rev__sub--rev {
+	color: #fff;
 	font-family: "Helvetica Neue", "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -1135,6 +1199,50 @@ a {
 	line-height: 36px;
 }
 
+.p-about {
+	background-color: #285DB1;
+	color: #fff;
+}
+
+.p-about__items-flex {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-about__items-text {
+	width: 42.43%;
+}
+
+.p-about__lead {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 52px;
+	padding-top: 50px;
+}
+
+.p-about__text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-right: 35.3%;
+	padding-top: 20px;
+}
+
+.p-about__btn {
+	color: #fff;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 36px;
+}
+
+.p-about__item-img {
+	height: auto;
+	width: 100%;
+}
+
 .u-separate {
 	margin-bottom: 24px;
 	margin-top: 24px;
@@ -1248,6 +1356,14 @@ a {
 	right: 0;
 }
 
+.l-about__inner {
+	margin: auto;
+}
+
+.l-about__btnArea {
+	padding-bottom: 30px;
+}
+
 .p-mv__read-main {
 	font-size: 36px;
 	line-height: 48px;
@@ -1256,6 +1372,10 @@ a {
 .p-mv__read-sub {
 	font-size: 20px;
 	line-height: 32px;
+}
+
+.p-about__items-flex {
+	flex-wrap: wrap;
 }
 
 .u-hidden-tab {
@@ -1361,6 +1481,18 @@ a {
 	margin-left: 0px;
 }
 
+.l-about {
+	padding: 50px 0;
+}
+
+.l-about__inner {
+	padding: 50px 40px;
+}
+
+.l-about__btnArea {
+	text-align: right;
+}
+
 .c-btn {
 	font-style: 14px;
 	line-height: 22px;
@@ -1391,6 +1523,16 @@ a {
 }
 
 .c-section__title__sub {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.c-section__title--rev {
+	font-size: 32px;
+	line-height: 52px;
+}
+
+.c-section__title--rev__sub--rev {
 	font-size: 12px;
 	line-height: 12px;
 }
@@ -1577,6 +1719,26 @@ a {
 }
 
 .p-blog__btn {
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.p-about__items-flex {
+	display: block;
+}
+
+.p-about__lead {
+	font-size: 18px;
+	padding-top: 30px;
+}
+
+.p-about__text {
+	font-size: 14px;
+	padding-right: 0;
+}
+
+.p-about__btn {
 	font-size: 16px;
 	letter-spacing: 0;
 	line-height: 32px;
