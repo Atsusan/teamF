@@ -29,6 +29,7 @@ function watch(done) {
     gulp.watch('./src/assets/js/**/*.js', gulp.series(minJS, browserReload));
     gulp.watch('./src/assets/**/*', gulp.series(copyImage, browserReload));
     gulp.watch('./src/**/*.html', gulp.series(formatHTML, browserReload));
+    // gulp/watch('../**/*.php' , browserInit);
     done();
 }
 
@@ -37,6 +38,7 @@ function browserInit() {
         server: {
             baseDir: "./public"
         }
+        // proxy: "http://localhost:3000"
     });
 }
 
