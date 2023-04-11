@@ -120,6 +120,19 @@ a {
 	z-index: 10;
 }
 
+.l-header__page {
+	background: #285DB1;
+	height: 300px;
+	padding: 14px 80px;
+	position: relative;
+	width: 100%;
+}
+
+.l-header__body {
+	margin-left: 140px;
+	margin-top: 26px;
+}
+
 .l-bg-wrapper {
 	position: relative;
 }
@@ -178,11 +191,19 @@ a {
 	width: 1440px;
 }
 
+.l-news__page {
+	margin: 0px auto;
+}
+
 .l-news__title {
 	height: auto;
 	margin-left: 220px;
 	max-width: 100%;
 	width: 1440px;
+}
+
+.l-news__page {
+	margin: 38px 80px;
 }
 
 .l-products {
@@ -569,6 +590,14 @@ a {
 	line-height: 32px;
 }
 
+.c-section__title__sub.-header {
+	color: #fff;
+}
+
+.c-section__title.-header {
+	color: #fff;
+}
+
 /*== タイトルの文字色が#fffバージョン　*/
 
 .c-section__title--rev {
@@ -585,6 +614,32 @@ a {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 32px;
+}
+
+.c-bread-crumb {
+	align-items: center;
+	display: flex;
+	letter-spacing: 0.02;
+	line-height: 1.45;
+}
+
+.c-bread-crumb__top {
+	color: rgba(53, 64, 47, 0.4);
+	position: relative;
+}
+
+.c-bread-crumb__arrow {
+	border-right: 1px solid #35402F;
+	border-top: 1px solid #35402F;
+	display: inline-block;
+	height: 11px;
+	margin-left: 33px;
+	transform: rotate(45deg);
+	width: 11px;
+}
+
+.c-bread-crumb__text {
+	margin-left: 32px;
 }
 
 .p-header {
@@ -1070,6 +1125,10 @@ a {
 	overflow: hidden;
 }
 
+.p-news {
+	margin: 142px auto 88px;
+}
+
 .p-news__index {
 	line-height: 2;
 	margin-left: 594px;
@@ -1077,6 +1136,11 @@ a {
 	margin-top: 23.08px;
 	max-width: 100%;
 	width: 626px;
+}
+
+.p-news__index.-page {
+	margin: 0;
+	margin-left: 327px;
 }
 
 .p-news__item {
@@ -1114,6 +1178,50 @@ a {
 	letter-spacing: 0.01;
 	line-height: 2;
 	margin: 0 auto;
+}
+
+.p-news__footer {
+	align-items: center;
+	display: flex;
+	margin-left: 172px;
+	margin-top: 58px;
+}
+
+.p-news__label {
+	margin-left: 62px;
+}
+
+.p-news__label:first-child {
+	margin-left: 0;
+}
+
+.p-news__number {
+	font-weight: 700;
+	line-height: 2;
+	position: relative;
+	z-index: 1;
+}
+
+.p-news__number::before {
+	border: 1px solid #333;
+	border-radius: 50%;
+	content: "";
+	height: 48px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 48px;
+	z-index: -1;
+}
+
+.p-news__number:hover {
+	color: #fff;
+}
+
+.p-news__number:hover::before {
+	background: #285DB1;
+	border: 1px solid transparent;
 }
 
 .p-products__index {

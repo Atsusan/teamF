@@ -19,10 +19,18 @@
         line-height: 32px;
         color: global.$text-color;
 
+        &.-header {
+            color: #fff;
+        }
+
             @include global.mq(sp) {
                 font-size: 12px;
                 line-height: 12px;
             }
+    }
+
+    &.-header {
+        color: #fff;
     }
 }
 

@@ -1,0 +1,28 @@
+@use '../global' as global;
+
+.c-bread-crumb {
+  display: flex;
+  line-height: 1.45;
+  letter-spacing: .02;
+  align-items: center;
+}
+
+.c-bread-crumb__top {
+  color: #35402F66;
+  position: relative;
+}
+
+.c-bread-crumb__arrow {
+  margin-left: 33px;
+  display: inline-block;
+
+  width: 11px;
+  height: 11px;
+  border-top: 1px solid #35402F;
+  border-right: 1px solid #35402F;
+  transform: rotate(45deg);
+}
+
+.c-bread-crumb__text {
+  margin-left: 32px;
+}

@@ -9,6 +9,10 @@
     margin: 50px auto;
     padding: 0 40px;
   }
+
+  &__page {
+    margin: 0px auto;
+  }
 }
 
 .l-news__title {
@@ -22,3 +26,6 @@
   }
 }
 
+.l-news__page {
+  margin: 38px 80px;
+}
