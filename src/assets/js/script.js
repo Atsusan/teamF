@@ -48,7 +48,7 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-// テキストアニメーション実装
+// テキストぶつ切り用
 document.addEventListener('DOMContentLoaded', function () {
 
   const els = document.querySelectorAll('.c-animate-title');

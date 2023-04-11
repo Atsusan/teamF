@@ -142,6 +142,12 @@ a {
 	margin-top: 30px;
 }
 
+.l-mv__content-area--child {
+	left: 15.2777%;
+	position: absolute;
+	top: 102px;
+}
+
 .l-footer__inner {
 	padding: 80px 20px 30px 20px;
 }
@@ -301,6 +307,44 @@ a {
 
 .c-btn--iconWh:hover::before {
 	background: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2%2018C1.45%2018%200.979%2017.8043%200.587%2017.413C0.195667%2017.021%200%2016.55%200%2016V2C0%201.45%200.195667%200.979%200.587%200.587C0.979%200.195667%201.45%200%202%200H13L18%205V16C18%2016.55%2017.8043%2017.021%2017.413%2017.413C17.021%2017.8043%2016.55%2018%2016%2018H2ZM2%2016H16V6H12V2H2V16ZM4%2014H14V12H4V14ZM4%206H9V4H4V6ZM4%2010H14V8H4V10Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+}
+
+.c-btn--Wh2 {
+	background-color: #fff;
+	border-radius: 50px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	color: #285DB1;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+	padding: 13px 80px;
+	position: relative;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.c-btn--Wh2::after {
+	background: url(../img/parts/line-blue.svg) no-repeat center center/contain;
+	content: "";
+	height: 15px;
+	position: absolute;
+	right: 24px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s;
+	width: 24px;
+}
+
+.c-btn--Wh2:hover::after {
+	background: url(../img/parts/line-white.svg) no-repeat center center/contain;
+	right: 16px;
+}
+
+.c-btn--Wh2:hover {
+	background-color: #285DB1;
+	border: 1px solid #285DB1;
+	color: #fff;
+	padding: 12px 79px;
 }
 
 .c-animate-title {
@@ -755,6 +799,28 @@ a {
 .p-mv__contact {
 	position: relative;
 	z-index: 2;
+}
+
+.p-mv__bg--child {
+	background: #0575E6; /* Chrome 10-25, Safari 5.1-6 */ /* fallback for old browsers */
+	background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 300px;
+}
+
+.p-mv__read-main--child {
+	color: #fff;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 56px;
+	font-weight: 400;
+	line-height: 80px;
+}
+
+.p-mv__read-sub--child {
+	color: #fff;
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
@@ -1512,6 +1578,20 @@ a {
 	left: 20px;
 }
 
+.c-btn--Wh2 {
+	font-style: 14px;
+	line-height: 22px;
+	padding: 9px 58px;
+}
+
+.c-btn--Wh2::after {
+	right: 18px;
+}
+
+.c-btn--Wh2:hover::after {
+	right: 14px;
+}
+
 .c-read {
 	font-size: 14px;
 	line-height: 22px;
@@ -1576,6 +1656,16 @@ a {
 	font-size: 14px;
 	line-height: 22px;
 	padding: 8px 57px;
+}
+
+.p-mv__read-main--child {
+	font-size: 32px;
+	line-height: 52px;
+}
+
+.p-mv__read-sub--child {
+	font-size: 12px;
+	line-height: 20px;
 }
 
 .p-footer__nav__list {
