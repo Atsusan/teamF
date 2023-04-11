@@ -19,7 +19,6 @@
     &__lists1{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         gap: 50px;
 
@@ -57,12 +56,11 @@
 
         &__link {
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 3px;
         }
 
-        &__img{
+        &__img {
             overflow: hidden;
             width: 94px;
             height: 66px;

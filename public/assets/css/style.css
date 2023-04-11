@@ -1391,7 +1391,6 @@ a {
 }
 
 .p-aside__lists1 {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
@@ -1433,7 +1432,6 @@ a {
 	align-items: center;
 	display: flex;
 	gap: 3px;
-	justify-content: center;
 }
 
 .p-aside__lists1__img {
@@ -1609,6 +1607,14 @@ a {
 
 .swiper-button-next::after {
 	right: 0;
+}
+
+}
+
+@media screen and (max-width: 996px) {
+
+.l-blogPage__wrapper {
+	gap: 10px;
 }
 
 }
