@@ -377,14 +377,13 @@ a {
 }
 
 .c-btn--Wh2:hover::after {
-	background: url(../img/parts/line-white.svg) no-repeat center center/contain;
 	right: 16px;
 }
 
 .c-btn--Wh2:hover {
-	background-color: #285DB1;
-	border: 1px solid #285DB1;
-	color: #fff;
+	background-color: #FACB52;
+	border: 1px solid #FACB52;
+	color: #285DB1;
 	padding: 12px 79px;
 }
 
@@ -844,7 +843,7 @@ a {
 
 .p-mv__bg--child {
 	background: #0575E6; /* Chrome 10-25, Safari 5.1-6 */ /* fallback for old browsers */
-	background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to bottom, #021B79, #8ab8e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 300px;
 }
 

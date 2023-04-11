@@ -181,7 +181,7 @@
     &:hover::after {
         right: 16px;
         // 色の変更
-        background: url(../img/parts/line-white.svg) no-repeat center center/contain;
+        // background: url(../img/parts/line-white.svg) no-repeat center center/contain;
 
             @include global.mq(sp) {
                 right: 14px;
@@ -189,9 +189,9 @@
     }
 
     &:hover {
-        background-color: global.$link-btn-color;
-        color: #fff;
-        border: 1px solid global.$link-btn-color;
+        background-color: #FACB52;
+        color: global.$link-btn-color;
+        border: 1px solid #FACB52;
         //borderとの差異をなくす処理
         padding: 12px 79px;
     }
