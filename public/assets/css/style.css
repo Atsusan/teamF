@@ -264,6 +264,11 @@ a {
 	width: 23%;
 }
 
+.l-aboutPage__inner {
+	padding-block: 120px 80px;
+	padding-inline: 18.0556%;
+}
+
 .c-btn {
 	background-color: #285DB1;
 	border-radius: 50px;
@@ -1505,6 +1510,60 @@ a {
 	overflow: hidden;
 }
 
+.p-aboutPage__table {
+	width: 100%;
+}
+
+.p-aboutPage__info {
+	width: 100%;
+}
+
+.p-aboutPage__info-title {
+	background: #EFF0F5;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 36px;
+	width: 18.4782608696%;
+}
+
+.p-aboutPage__info-text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 28px 0;
+	padding-left: 7.3333333333%;
+	width: 81.5217391304%;
+}
+
+.p-aboutPage__info-title,
+.p-aboutPage__info-text {
+	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+.p-aboutPage__info-access {
+	padding-block: 40px 35px;
+}
+
+.p-aboutPage__info-map {
+	padding-right: 19.3333333333%;
+}
+
+.p-aboutPage__iframe__wrap {
+	overflow: hidden;
+	padding-top: 54.5454545455%;
+	position: relative;
+	width: 100%;
+}
+
+.p-aboutPage__iframe__wrap > iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .u-separate {
 	margin-bottom: 24px;
 	margin-top: 24px;
@@ -1624,6 +1683,11 @@ a {
 
 .l-about__btnArea {
 	padding-bottom: 30px;
+}
+
+.l-aboutPage__inner {
+	padding-block: 80px 60px;
+	padding-inline: 8%;
 }
 
 .p-mv__read-main {
@@ -2080,6 +2144,30 @@ a {
 .p-aside__title1 {
 	font-size: 16px;
 	line-height: 32px;
+}
+
+.p-aboutPage__info-title {
+	display: block;
+	font-size: 16px;
+	padding-left: 16px;
+	text-align: left;
+	width: 100%;
+}
+
+.p-aboutPage__info-text {
+	display: block;
+	font-size: 14px;
+	padding-inline: 12px;
+	width: 100%;
+}
+
+.p-aboutPage__info-title,
+.p-aboutPage__info-text {
+	border-bottom: none;
+}
+
+.p-aboutPage__info-map {
+	padding-right: 0;
 }
 
 .u-hidden-sp {
