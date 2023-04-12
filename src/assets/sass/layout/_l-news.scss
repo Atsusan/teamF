@@ -7,7 +7,6 @@
 
   @include global.mq(sp) {
     margin: 50px auto;
-    padding: 0 40px;
   }
 }
 
@@ -24,4 +23,11 @@
 
 .l-news__page {
   margin: 142px auto 88px;
+  max-width: calc(1240px + 20px + 20px); // calcの中に#{$inner-width}を設定し、gulpを使用するとエラーが出るので注意
+  padding: 0 20px;
+
+  @include global.mq(sp) {
+    margin: 82px auto 60px;
+    padding: 0 40px;
+  }
 }

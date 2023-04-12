@@ -1,8 +1,7 @@
 @use '../global' as global;
 
 .p-products__index {
-  margin-top: 50px;
-  margin-left: 220px;
+
 
   @include global.mq(sp) {
     margin-top: 36px;
@@ -33,6 +32,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-right: 40px;
 
+
   &:nth-child(2n) {
     margin-right: 0;
   }
@@ -55,6 +55,14 @@
       margin-top: 30px;
     }
   }
+
+  @media only screen and (max-width: 1053px) {
+    /* 1000px以下の場合に適用されるスタイル */
+    &:nth-child(2) {
+      margin-top: 40px;
+    }
+  }
+
 }
 
 .p-products__head {
@@ -77,10 +85,12 @@
 
 .p-products__body {
   width: 265px;
-  margin: 20px 100px 34px;
+  max-width: 100%;
+  margin: 20px auto 34px;
   padding-top: 19px;
   border-top: 1px dashed #333333;
   text-align: center;
+  overflow: hidden;
 
   @include global.mq(sp) {
     margin: 10px 15px 20px;

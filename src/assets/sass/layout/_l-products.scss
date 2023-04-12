@@ -11,23 +11,13 @@
 }
 
 .l-products__inner {
-  width: 1440px;
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 50px auto 0;
+  max-width: calc(1000px + 20px + 20px); // calcの中に#{$inner-width}を設定し、gulpを使用するとエラーが出るので注意
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include global.mq(sp) {
+    margin-top: 36px;
     padding: 0 40px;
   }
 }
-
-.l-products__title {
-  margin-left: 220px;
-  width: 1440px;
-  max-width: 100%;
-  height: auto;
-
-  @include global.mq(sp) {
-    margin-left: 0px;
-  }
-}
-
