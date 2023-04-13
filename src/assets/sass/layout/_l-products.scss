@@ -21,3 +21,14 @@
     padding: 0 40px;
   }
 }
+
+.l-products__page {
+  margin: 119px auto 88px;
+  max-width: calc(1150px + 20px + 20px); // calcの中に#{$inner-width}を設定し、gulpを使用するとエラーが出るので注意
+  padding: 0 20px;
+
+  @include global.mq(sp) {
+    margin: 50px auto;
+    padding: 0 40px;
+  }
+}

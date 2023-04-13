@@ -226,6 +226,12 @@ a {
 	padding-right: 20px;
 }
 
+.l-products__page {
+	margin: 119px auto 88px;
+	max-width: 1190px;
+	padding: 0 20px;
+}
+
 .l-about__inner {
 	padding: 80px 0;
 	padding-left: 15.2672%;
@@ -674,6 +680,45 @@ a {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 32px;
+}
+
+.c-product-card {
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 444.75px;
+	overflow: hidden;
+	transition: opacity 0.3s;
+	width: 350px;
+}
+
+.c-product-card__img {
+	background: #ccc;
+	height: 218.75px;
+	width: inherit;
+}
+
+.c-product-card__content {
+	margin: 15px auto 30px;
+	width: inherit;
+}
+
+.c-product-card__title {
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1.58;
+	text-align: center;
+}
+
+.c-product-card__text {
+	font-family: "Helvetica Neue", "Roboto", sans-serif;
+	font-weight: 400;
+	line-height: 2;
+	margin: 15px auto 0;
+	overflow: hidden;
+	width: 65.7143%;
 }
 
 .p-header {
@@ -1342,6 +1387,49 @@ a {
 	margin: 0 auto;
 }
 
+.p-products__categories {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.p-products__category {
+	border: 1px solid #285DB1;
+	border-radius: 5px;
+	font-weight: 400;
+	letter-spacing: 0.01;
+	line-height: 1.448;
+	margin-right: 20px;
+	padding: 10px 20px;
+}
+
+.p-products__category:last-child {
+	margin-right: 0;
+}
+
+.p-products__category.-action {
+	background: #285DB1;
+	color: #fff;
+}
+
+.p-products__cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.p-products__card {
+	margin-right: 50px;
+}
+
+.p-products__card:nth-child(3n) {
+	margin-right: 0;
+}
+
+.p-products__card:nth-child(n+4) {
+	margin-top: 50px;
+}
+
 .p-blog__btn {
 	color: #333;
 	font-family: "Helvetica Neue", "Roboto", sans-serif;
@@ -1821,6 +1909,11 @@ a {
 	padding: 0 40px;
 }
 
+.l-products__page {
+	margin: 50px auto;
+	padding: 0 40px;
+}
+
 .l-about {
 	padding: 50px 0;
 }
@@ -2129,6 +2222,14 @@ a {
 
 .p-products__view-more {
 	font-size: 16px;
+}
+
+.p-products__cards {
+	display: block;
+}
+
+.p-products__card {
+	margin-right: 0;
 }
 
 .p-blog__btn {
