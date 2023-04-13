@@ -2,7 +2,6 @@
 
 .p-products__index {
 
-
   @include global.mq(sp) {
     margin-top: 36px;
     margin-left: 0;
@@ -128,5 +127,59 @@
 
   @include global.mq(sp) {
     font-size: 16px;
+  }
+}
+
+.p-products__categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-products__category {
+  margin-right: 20px;
+  font-weight: 400;
+  line-height: 1.448;
+  letter-spacing: .01;
+  padding: 10px 20px;
+  border: 1px solid global.$link-btn-color;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.-action {
+    background: global.$link-btn-color;
+    color: #fff;
+  }
+}
+
+.p-products__cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include global.mq(sp) {
+    display: block;
+ 
+  }
+
+}
+
+.p-products__card {
+  margin-right: 50px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(n + 4) {
+    margin-top: 50px;
+  }
+
+  @include global.mq(sp) {
+    margin-right: 0;
+
   }
 }
