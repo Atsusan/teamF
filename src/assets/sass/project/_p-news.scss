@@ -81,7 +81,6 @@
   display: flex;
   align-items: center;
 
-
   @include global.mq(sp) {
     margin: 40px auto 0;
     padding-left: 0;
@@ -90,14 +89,14 @@
 }
 
 .p-news__label {
-  margin-right: 64px;
+  margin-left: 64px;
 
-  &:last-child {
-    margin-right: 0;
+  &:first-child {
+    margin-left: 0;
   }
 
   @include global.mq(sp) {
-    margin-right: 46px;
+    margin-left: 46px;
   }
 }
 
