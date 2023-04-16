@@ -1794,11 +1794,7 @@ a {
 
 }
 
-@media only screen and (max-width: 1000px) {
-
-.p-products__items { /* 1000px以下の場合に適用されるスタイル */
-	display: block;
-}
+@media only screen and (max-width: 1053px) {
 
 .p-products__item { /* 1000px以下の場合に適用されるスタイル */
 	margin: 40px auto 0;
@@ -2181,7 +2177,7 @@ a {
 }
 
 .p-products__items {
-	display: block;
+	gap: 30px;
 }
 
 .p-products__item {
