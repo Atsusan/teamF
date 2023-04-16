@@ -2,10 +2,6 @@
 
 .p-products__index {
 
-  @include global.mq(sp) {
-    margin-top: 36px;
-    margin-left: 0;
-  }
 }
 
 .p-products__items {
@@ -15,9 +11,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 40px;
+
+  @media only screen and (max-width: 1000px) {
+    /* 1000px以下の場合に適用されるスタイル */
+    display: block;
+
+  }
+
 
   @include global.mq(sp) {
+    // gap: 30px;
     display: block;
+
   }
 }
 
@@ -29,39 +35,20 @@
   border-radius: 10px;
   border: 1px solid #EFF0F5;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-right: 40px;
 
+  @media only screen and (max-width: 1000px) {
+    /* 1000px以下の場合に適用されるスタイル */
+    margin: 40px auto 0;
 
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(n + 3) {
-    margin-top: 40px;
   }
 
   @include global.mq(sp) {
     width: 295px;
     height: 180px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-    margin-right: 0;
+    margin: 30px auto 0;
 
-    &:nth-child(n + 3) {
-      margin-top: 0;
-    }
-
-    &:nth-child(n + 2) {
-      margin-top: 30px;
-    }
   }
-
-  @media only screen and (max-width: 1053px) {
-    /* 1000px以下の場合に適用されるスタイル */
-    &:nth-child(2) {
-      margin-top: 40px;
-    }
-  }
-
 }
 
 .p-products__head {
@@ -134,10 +121,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+
+  @include global.mq(sp) {
+    flex-flow: column;
+  }
 }
 
 .p-products__category {
-  margin-right: 20px;
   font-weight: 400;
   line-height: 1.448;
   letter-spacing: .01;
@@ -159,27 +150,31 @@
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
 
   @include global.mq(sp) {
     display: block;
- 
   }
-
 }
 
 .p-products__card {
-  margin-right: 50px;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(n + 4) {
-    margin-top: 50px;
-  }
 
   @include global.mq(sp) {
-    margin-right: 0;
+    margin-top: 50px;
+  }
+}
 
+.p-products__footer {
+  margin: 58px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @include global.mq(sp) {
+    margin: 40px auto 0;
+    padding-left: 0;
+    justify-content: center;
   }
 }

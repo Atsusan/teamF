@@ -220,6 +220,7 @@ a {
 }
 
 .l-products__inner {
+	justify-content: center;
 	margin: 50px auto 0;
 	max-width: 1040px;
 	padding-left: 20px;
@@ -689,6 +690,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 444.75px;
+	max-width: 100%;
 	overflow: hidden;
 	transition: opacity 0.3s;
 	width: 350px;
@@ -697,12 +699,12 @@ a {
 .c-product-card__img {
 	background: #ccc;
 	height: 218.75px;
-	width: inherit;
+	width: 100%;
 }
 
 .c-product-card__content {
 	margin: 15px auto 30px;
-	width: inherit;
+	width: 100%;
 }
 
 .c-product-card__title {
@@ -1320,6 +1322,7 @@ a {
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
+	gap: 40px;
 	height: auto;
 	max-width: 100%;
 	width: 1100px;
@@ -1331,17 +1334,8 @@ a {
 	border-radius: 10px;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	height: 280px;
-	margin-right: 40px;
 	max-width: 100%;
 	width: 480px;
-}
-
-.p-products__item:nth-child(2n) {
-	margin-right: 0;
-}
-
-.p-products__item:nth-child(n+3) {
-	margin-top: 40px;
 }
 
 .p-products__head {
@@ -1390,6 +1384,7 @@ a {
 .p-products__categories {
 	align-items: center;
 	display: flex;
+	gap: 20px;
 	justify-content: center;
 }
 
@@ -1399,7 +1394,6 @@ a {
 	font-weight: 400;
 	letter-spacing: 0.01;
 	line-height: 1.448;
-	margin-right: 20px;
 	padding: 10px 20px;
 }
 
@@ -1415,19 +1409,16 @@ a {
 .p-products__cards {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 50px;
+	justify-content: center;
 	margin-top: 50px;
 }
 
-.p-products__card {
-	margin-right: 50px;
-}
-
-.p-products__card:nth-child(3n) {
-	margin-right: 0;
-}
-
-.p-products__card:nth-child(n+4) {
-	margin-top: 50px;
+.p-products__footer {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 58px auto 0;
 }
 
 .p-blog__btn {
@@ -1803,13 +1794,14 @@ a {
 
 }
 
-@media only screen and (max-width: 1053px) {
+@media only screen and (max-width: 1000px) {
 
-.p-products__item { /* 1000px以下の場合に適用されるスタイル */
+.p-products__items { /* 1000px以下の場合に適用されるスタイル */
+	display: block;
 }
 
-.p-products__item:nth-child(2) {
-	margin-top: 40px;
+.p-products__item { /* 1000px以下の場合に適用されるスタイル */
+	margin: 40px auto 0;
 }
 
 }
@@ -2007,6 +1999,18 @@ a {
 	line-height: 12px;
 }
 
+.c-product-card {
+	margin: 0 auto;
+}
+
+.c-product-card__title {
+	font-size: 16px;
+}
+
+.c-product-card__text {
+	font-size: 14px;
+}
+
 .p-header__logo {
 	width: 96px;
 }
@@ -2176,11 +2180,6 @@ a {
 	width: 36px;
 }
 
-.p-products__index {
-	margin-left: 0;
-	margin-top: 36px;
-}
-
 .p-products__items {
 	display: block;
 }
@@ -2188,16 +2187,8 @@ a {
 .p-products__item {
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 	height: 180px;
-	margin-right: 0;
+	margin: 30px auto 0;
 	width: 295px;
-}
-
-.p-products__item:nth-child(n+3) {
-	margin-top: 0;
-}
-
-.p-products__item:nth-child(n+2) {
-	margin-top: 30px;
 }
 
 .p-products__head {
@@ -2224,12 +2215,22 @@ a {
 	font-size: 16px;
 }
 
+.p-products__categories {
+	flex-flow: column;
+}
+
 .p-products__cards {
 	display: block;
 }
 
 .p-products__card {
-	margin-right: 0;
+	margin-top: 50px;
+}
+
+.p-products__footer {
+	justify-content: center;
+	margin: 40px auto 0;
+	padding-left: 0;
 }
 
 .p-blog__btn {
