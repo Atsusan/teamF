@@ -680,7 +680,7 @@ a {
 	font-family: "Helvetica Neue", "Roboto", sans-serif;
 	font-size: 56px;
 	font-weight: 400;
-	line-height: 80px;
+	line-height: 1;
 }
 
 .c-section__title__sub {
@@ -688,7 +688,8 @@ a {
 	font-family: "Helvetica Neue", "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 32px;
+	line-height: 1;
+	margin-top: 2px;
 }
 
 /*== タイトルの文字色が#fffバージョン　*/
@@ -2264,12 +2265,10 @@ a {
 
 .c-section__title {
 	font-size: 32px;
-	line-height: 52px;
 }
 
 .c-section__title__sub {
 	font-size: 12px;
-	line-height: 12px;
 }
 
 .c-section__title--rev {
