@@ -144,6 +144,14 @@ a {
 	z-index: 10;
 }
 
+.l-header.is-show {
+	background: linear-gradient(to bottom, #021B79, #8ab8e5);
+	color: #fff;
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+	opacity: 1;
+	position: fixed;
+}
+
 .l-bg-wrapper {
 	position: relative;
 }
@@ -2012,7 +2020,7 @@ a {
 @media screen and (max-width: 1099px) {
 
 .l-header {
-	padding: 14px 40px;
+	padding: 20px 40px;
 }
 
 .l-mv__content-area {
@@ -2108,7 +2116,7 @@ a {
 }
 
 .l-header {
-	padding: 14px 20px;
+	padding: 20px 20px;
 }
 
 .l-mv__content-area {

@@ -11,11 +11,20 @@
     // 幅
     width: 100%;
 
-        @include global.mq(tab) {
-            padding: 14px 40px;
-        }
+    &.is-show {
+        position: fixed;
+        background: linear-gradient(to bottom, #021B79, #8ab8e5);;
+        filter:drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+        opacity: 1;
+        color: #fff;
+    }
 
-        @include global.mq(sp) {
-            padding: 14px 20px;
-        }
+
+    @include global.mq(tab) {
+        padding: 20px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 20px 20px;
+    }
 }
