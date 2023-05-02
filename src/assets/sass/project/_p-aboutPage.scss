@@ -50,9 +50,9 @@
     border: 1px solid #ccc;
     // border-bottom を borderに変更しました。
 
-    // @include global.mq(sp) {
-    //   border-bottom: none;
-    // }
+    @include global.mq(sp) {
+      border: none;
+    }
   }
 
   &__info-access {

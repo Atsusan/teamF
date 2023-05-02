@@ -3187,6 +3187,11 @@ a {
 	width: 100%;
 }
 
+.p-aboutPage__info-title,
+.p-aboutPage__info-text {
+	border: none;
+}
+
 .p-aboutPage__info-map {
 	padding-right: 0;
 }
