@@ -1722,6 +1722,7 @@ a {
 }
 
 .p-aboutPage__info {
+	border-collapse: collapse;
 	width: 100%;
 }
 
@@ -1744,7 +1745,7 @@ a {
 
 .p-aboutPage__info-title,
 .p-aboutPage__info-text {
-	border-bottom: 1px solid #ccc;
+	border: 1px solid #ccc;
 	vertical-align: middle;
 }
 
@@ -3184,11 +3185,6 @@ a {
 	font-size: 14px;
 	padding-inline: 12px;
 	width: 100%;
-}
-
-.p-aboutPage__info-title,
-.p-aboutPage__info-text {
-	border-bottom: none;
 }
 
 .p-aboutPage__info-map {
