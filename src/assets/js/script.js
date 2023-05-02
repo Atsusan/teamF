@@ -88,3 +88,15 @@ class TextAnimation {
         this.DOM.el.classList.toggle('inview');
     }
   }
+
+
+/* headerスクロールすると背景変更
+=========================== */
+jQuery(window).on('scroll', function(){
+    if ( 300 < jQuery(this).scrollTop()) {
+    jQuery('.l-header').addClass('is-show');
+    } else {
+    jQuery('.l-header').removeClass('is-show');
+    }
+});
+
